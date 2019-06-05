@@ -36,6 +36,7 @@
         <z_cloud_commons-version>1.0.0-SNAPSHOT</z_cloud_commons-version>
         <z_cloud_service.version>1.0.0-SNAPSHOT</z_cloud_service.version>
         <z_cloud_web.version>1.0.0-SNAPSHOT</z_cloud_web.version>
+        <guava.version>19.0</guava.version>
     </properties>
 
     <distributionManagement>
@@ -58,7 +59,18 @@
     <!--依赖管理-->
     <dependencyManagement>
         <dependencies>
-
+            <!--z_cloud_commons-->
+            <dependency>
+                <groupId>com.cloud.commons</groupId>
+                <artifactId>z_cloud_commons</artifactId>
+                <version>${z_cloud_commons-version}</version>
+            </dependency>
+            <!--google guava-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
