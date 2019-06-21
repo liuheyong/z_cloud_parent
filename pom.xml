@@ -40,6 +40,7 @@
         <spring-context>5.1.7.RELEASE</spring-context>
         <zookeeper.version>3.4.13</zookeeper.version>
         <dubbo.starter.version>0.2.0</dubbo.starter.version>
+        <shiro.version>1.4.0</shiro.version>
     </properties>
 
     <distributionManagement>
