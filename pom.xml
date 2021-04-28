@@ -33,9 +33,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <z_cloud_commons-version>1.0.0-SNAPSHOT</z_cloud_commons-version>
-        <z_cloud_service.version>1.0.0-SNAPSHOT</z_cloud_service.version>
-        <z_cloud_web.version>1.0.0-SNAPSHOT</z_cloud_web.version>
+        <z_cloud.version>1.0.0-SNAPSHOT</z_cloud.version>
         <guava.version>19.0</guava.version>
         <spring-context>5.1.7.RELEASE</spring-context>
         <zookeeper.version>3.4.13</zookeeper.version>
@@ -43,33 +41,31 @@
         <shiro.version>1.4.0</shiro.version>
     </properties>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Internal Snapshots</name>
-            <url>
-                http://nexus.fengxiaomi.com:8081/nexus/content/repositories/snapshots
-            </url>
-        </snapshotRepository>
-        <repository>
-            <id>opensesame.releases.account</id>
-            <name>Internal Releases</name>
-            <url>
-                http://nexus.fengxiaomi.com:8081/nexus/content/repositories/releases
-            </url>
-        </repository>
-    </distributionManagement>
+    <!--<distributionManagement>-->
+    <!--    <snapshotRepository>-->
+    <!--        <id>nexus-snapshots</id>-->
+    <!--        <name>Internal Snapshots</name>-->
+    <!--        <url>-->
+    <!--            http://nexus.fengxiaomi.com:8081/nexus/content/repositories/snapshots-->
+    <!--        </url>-->
+    <!--    </snapshotRepository>-->
+    <!--    <repository>-->
+    <!--        <id>opensesame.releases.account</id>-->
+    <!--        <name>Internal Releases</name>-->
+    <!--        <url>-->
+    <!--            http://nexus.fengxiaomi.com:8081/nexus/content/repositories/releases-->
+    <!--        </url>-->
+    <!--    </repository>-->
+    <!--</distributionManagement>-->
 
     <!--依赖管理-->
-    <dependencyManagement>
-        <dependencies>
-            <!--z_cloud_commons-->
-            <dependency>
-                <groupId>com.cloud.com.alibabacloud.commons</groupId>
-                <artifactId>z_cloud_commons</artifactId>
-                <version>${z_cloud_commons-version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
+    <!--<dependencyManagement>-->
+    <!--    <dependencies>-->
+    <!--        <dependency>-->
+    <!--            <groupId>com.cloud.web</groupId>-->
+    <!--            <artifactId>z_cloud_web</artifactId>-->
+    <!--            <version>${z_cloud.version}</version>-->
+    <!--        </dependency>-->
+    <!--    </dependencies>-->
+    <!--</dependencyManagement>-->
 </project>
